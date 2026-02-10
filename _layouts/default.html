@@ -10,34 +10,35 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Thruput brand fonts -->
+    <!-- Thruput brand fonts (Nordic Monochrome) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 {% seo %}
     {% include head-custom.html %}
   </head>
 
   <body>
+  <!--
+    <nav class="site-nav-bar">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">thruput<span>.</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="{{ '/' | relative_url }}">home</a>
+        <a class="nav-link" href="{{ '/thruput-graphic-profile.html' | relative_url }}">graphic profile</a>
+      </div>
+    </nav>
+    -->
+
     {% if page.url == "/" %}
     <section class="hero">
       <div class="hero-content">
-        <h1 class="wordmark">{{ site.title }}</h1>
-        <p class="tagline">{{ site.description }}</p>
+        <h1 class="wordmark">thruput<span>.</span></h1>
+        <div class="hero-tagline">{{ site.description }}</div>
+        <a class="btn-cta" href="mailto:{{ site.email | default: 'info@thruput.se' }}">contact us</a>
       </div>
     </section>
     {% endif %}
-
-    <!--
-    <header class="site-header">
-      <a href="{{ '/' | relative_url }}" class="wordmark">{{ site.title }}</a>
-      <nav class="site-nav">
-        <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
-        <a class="nav-link" href="{{ '/thruput-graphic-profile.html' | relative_url }}">Graphic Profile</a>
-      </nav>
-    </header>
-    -->
 
     <div id="container">
       <div class="inner">
@@ -47,11 +48,10 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer is-dark">
       <div class="inner">
-        <h2 class="wordmark" style="color: white; font-size: 2rem; margin-bottom: 1rem;">{{ site.title }}</h2>
-        <p>{{ site.description }}</p>
-        <p>&copy; {{ site.time | date: "%Y" }} Thruput. All rights reserved.</p>
+        <div class="footer-wordmark">thruput<span>.</span></div>
+        <p>&copy; {{ site.time | date: "%Y" }} Thruput AB. Stockholm, SE</p>
       </div>
     </footer>
   </body>

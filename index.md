@@ -1,4 +1,4 @@
-## 💡 What We Do
+## What We Do
 
 We help organizations go from **concept to cloud** with a modern, pragmatic approach to software delivery.
 
@@ -13,7 +13,7 @@ We help organizations go from **concept to cloud** with a modern, pragmatic appr
 
 ---
 
-## ⚙️ How We Work
+## How We Work
 
 - **Clean Code, Always**  
   Code that’s easy to understand, easy to change, and built to last.
@@ -26,7 +26,7 @@ We help organizations go from **concept to cloud** with a modern, pragmatic appr
 
 ---
 
-## 👥 Who We Are
+## Who We Are
 
 We’re senior consultants and engineers who believe software delivery can be **better** — for clients, for developers, and for users.
 
