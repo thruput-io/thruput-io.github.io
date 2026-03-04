@@ -1,14 +1,13 @@
 ---
 ---
-
-/* Thruput — Nordic Monochrome tokens */
+  /* Thruput — Nordic Monochrome tokens */
 :root {
   /* Palette */
-  --thruput-fjord: #1B2B34;     /* Deep sea / Primary identity */
-  --thruput-arctic: #546A76;    /* Secondary blue */
-  --thruput-ash: #E5E9EC;       /* Cool neutral */
-  --thruput-glacier: #F8FAFC;   /* Main background */
-  --thruput-snow: #FFFFFF;      /* Clean base */
+  --thruput-fjord: #1B2B34; /* Deep sea / Primary identity */
+  --thruput-arctic: #546A76; /* Secondary blue */
+  --thruput-ash: #E5E9EC; /* Cool neutral */
+  --thruput-glacier: #F8FAFC; /* Main background */
+  --thruput-snow: #FFFFFF; /* Clean base */
 
   /* Fonts */
   --font-display: 'Space Grotesk', sans-serif;
@@ -38,7 +37,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: lowercase;
 }
 
-p { margin-bottom: 1.5rem; }
+p {
+  margin-bottom: 1.5rem;
+}
 
 /* Hero — minimal, with subtle "North Star" pattern */
 .hero {
@@ -75,7 +76,9 @@ p { margin-bottom: 1.5rem; }
     color: var(--thruput-fjord);
     margin: 0;
 
-    span { color: var(--thruput-arctic); }
+    span {
+      color: var(--thruput-arctic);
+    }
   }
 
   .hero-tagline {
@@ -105,11 +108,14 @@ p { margin-bottom: 1.5rem; }
 
 /* Layout container & Main content */
 main {
-  max-width: var(--container-max-width); 
-  margin: 0 auto; 
-  padding: 2rem; 
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem;
 
-  h1 { font-size: 2.5rem; margin-bottom: 1.25rem; }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
 
   h2 {
     font-size: 1.75rem;
@@ -126,37 +132,71 @@ main {
     text-decoration: underline;
     text-underline-offset: 3px;
 
-    &:hover { color: var(--thruput-fjord); }
+    &:hover {
+      color: var(--thruput-fjord);
+    }
   }
 
   ul {
     padding-left: 1.25rem;
   }
+}
 
-  /* Lists → rich cards */
-  #main_content {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
+.rich-cards {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  li {
+    background: var(--thruput-snow);
+    border: 1px solid var(--thruput-ash);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+
+    strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-family: var(--font-display);
+      letter-spacing: -0.01em;
+    }
+  }
+}
+
+.core-values {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  li {
+    background: var(--thruput-snow);
+    border: 1px solid var(--thruput-ash);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    position: relative;
+    border-top: 4px solid var(--thruput-arctic);
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      color: var(--thruput-arctic);
     }
 
-    li {
-      background: var(--thruput-snow);
-      border: 1px solid var(--thruput-ash);
-      border-radius: var(--border-radius);
-      padding: 1rem 1.25rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.03);
-
-      strong {
-        display: block;
-        margin-bottom: 0.25rem;
-        font-family: var(--font-display);
-        letter-spacing: -0.01em;
-      }
+    p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: var(--thruput-arctic);
     }
   }
 }
@@ -176,7 +216,11 @@ footer {
     font-weight: 700;
   }
 
-  p { margin: 10px 0 0; opacity: 0.6; font-size: 0.9rem; }
+  p {
+    margin: 10px 0 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
 
   /* Footer – dark variant support */
   &.is-dark {
@@ -184,7 +228,9 @@ footer {
     color: var(--thruput-snow);
     border-top: none;
 
-    a { color: var(--thruput-ash); }
+    a {
+      color: var(--thruput-ash);
+    }
   }
 }
 
@@ -238,3 +284,12 @@ nav {
   color: var(--thruput-fjord);
   text-decoration: none;
 }
+
+main.home {
+@extend .rich-cards;
+}
+
+main.how-we-work{
+@extend .core-values;
+}
+
