@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 ## What We Do
 
 We help organizations go from **concept to cloud** with a modern, pragmatic approach to software delivery.
@@ -23,14 +27,7 @@ We help organizations go from **concept to cloud** with a modern, pragmatic appr
   Small batches. Fast feedback. Continuous improvement.
 - **Twelve-Factor Principles**  
   Cloud-ready by default: stateless, observable, portable.
-
 ---
-
-## Who We Are
-
-We’re senior consultants and engineers who believe software delivery can be **better** — for clients, for developers, and for users.
-
-We’ve built platforms, modernized legacy systems, and helped teams level up — always with **quality** and **simplicity** at the core.
 
 ### Ready to build?
 Contact us at [info@thruput.se](mailto:info@thruput.se)
