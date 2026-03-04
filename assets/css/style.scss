@@ -175,27 +175,54 @@ main {
 
 .manifesto {
   &, ol {
-    list-style-type: upper-roman;
-    padding-left: 1.5rem;
-    max-width: 800px;
+    background: var(--thruput-snow);
+    border: 1px solid var(--thruput-ash);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    list-style-type: none;
+    counter-reset: manifesto-counter;
+    padding-left: 0;
     font-family: 'Inter', system-ui, sans-serif;
+
   }
 
   /* Top-level Pillar (The Main Value) */
   > li {
-    margin-bottom: 2.5rem;
+    counter-increment: manifesto-counter;
+    margin: 2.5rem;
     font-weight: 700;
     font-size: 1.25rem;
     color: #111827;
-    padding-left: 0.5rem;
+    padding-left: 0;
+
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      display: inline-block;
+      border: 2px solid #e5e7eb;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      position: relative;
+      background: var(--thruput-snow);
+      z-index: 1;
+      text-transform: uppercase;
+
+      &::before {
+        content: counter(manifesto-counter, upper-roman) ". ";
+        margin-right: 0.5rem;
+        color: var(--thruput-arctic);
+      }
+    }
   }
 
   ul, ol {
     list-style: none;
-    margin-top: 0.75rem;
+    margin-top: -1.5rem;
     padding-left: 1.5rem;
     border-left: 2px solid #e5e7eb;
-    margin-left: 0.4rem;
+    margin-left: 1rem;
+    position: relative;
+    padding-top: 1.5rem;
 
     li {
       font-weight: 400;
@@ -220,18 +247,26 @@ main {
 .daily-commitment {
   &, ul {
     list-style: none;
-    padding: 0;
+    padding: 1.5rem 2rem;
     margin: 2rem 0;
+    background: var(--thruput-snow);
+    border: 1px solid var(--thruput-ash);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
   }
 
   li {
     position: relative;
     padding-left: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: baseline;
     gap: 1rem;
     flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     /* Checklist marker */
     &::before {
