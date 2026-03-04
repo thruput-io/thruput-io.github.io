@@ -227,7 +227,11 @@ main {
   li {
     position: relative;
     padding-left: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
 
     /* Checklist marker */
     &::before {
@@ -241,9 +245,10 @@ main {
     }
 
     h3 {
-      margin: 0 0 0.25rem 0;
+      margin: 0;
       font-size: 1.1rem;
       color: var(--thruput-fjord);
+      white-space: nowrap;
     }
 
     p {
