@@ -14,7 +14,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;500&display=swap"
               rel="stylesheet">
-        <title>{{p.title}}</title>
 
         {% seo %}
         {% include head-custom-google-analytics.html %}
@@ -24,7 +23,7 @@
             <a class="nav-logo" href="{{ '/' | relative_url }}">thruput<span>.</span></a>
             <ul>
                 <li><a href="{{ '/' | relative_url }}">home</a></li>
-                {% assign pages = site.pages | where_exp: "item", "item.url != '/'" | where_exp: "page", "page.url != '/index.html'" %}
+                {% assign pages = site.pages | where: "index", true %}
                 {% for p in pages %}
                 {% if p.title %}
                 <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
@@ -43,7 +42,7 @@
         </section>
         {% endif %}
 
-        <main>
+        <main class="{{ page.title | slugify }}">
             {{ content }}
         </main>
 

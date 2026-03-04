@@ -1,6 +1,6 @@
 ---
-layout: default
 title: How We Work
+index: 'true'
 ---
 ## Our Core Values
 
