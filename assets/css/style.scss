@@ -181,6 +181,7 @@ main {
     font-family: 'Inter', system-ui, sans-serif;
   }
 
+  /* Top-level Pillar (The Main Value) */
   > li {
     margin-bottom: 2.5rem;
     font-weight: 700;
@@ -212,6 +213,43 @@ main {
         height: 1px;
         background: #e5e7eb;
       }
+    }
+  }
+}
+
+.daily-commitment {
+  &, ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+
+    /* Checklist marker */
+    &::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      color: var(--thruput-arctic);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.1rem;
+      color: var(--thruput-fjord);
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--thruput-arctic);
     }
   }
 }

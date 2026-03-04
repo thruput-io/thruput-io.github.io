@@ -18,7 +18,6 @@ title: Who We Are
 ---
 
 ## Engineering Manifesto
-
 1. ### The Test-First Mandate
    - **No Code Without Coverage:** If it isn't tested, it's broken by design.
    - **The "Green-to-Merge" Rule:** CI pipelines must be passing and robust. "Flaky" tests are treated as critical bugs and must be fixed immediately, not bypassed.
@@ -33,9 +32,14 @@ title: Who We Are
 {: .manifesto}
 
 ## Our Daily Commitment
-- **Automate the Boring:** So we can focus on the Creative.
-- **Instrument Everything:** Because data beats intuition.
-- **Speak the Truth:** Even when it’s uncomfortable.
-- **Ship for the User:** Not for the Jira board.
-- **Love the Process:** Because the craft is the reward.
-  {: .manifesto}
+-   ### Automate the Boring
+    So we can focus on the Creative. 
+-   ### Instrument Everything 
+    Because data beats intuition.
+-   ### Speak the Truth
+    Even when it’s uncomfortable.
+-  ### Ship for the User
+    Not for the Jira board.
+-  ### Love the Process
+    Because the craft is the reward.
+{: .daily-commitment}
