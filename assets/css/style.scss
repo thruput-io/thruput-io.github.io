@@ -173,51 +173,47 @@ main {
   }
 }
 
-/* Container */
 .manifesto {
-  &, ul, ol {
-
-    list-style: none;
-    padding: 0;
+  &, ol {
+    list-style-type: upper-roman;
+    padding-left: 1.5rem;
     max-width: 800px;
     font-family: 'Inter', system-ui, sans-serif;
   }
-}
 
-/* Top-level Pillar (The Main Value) */
-.manifesto > li {
-  margin-bottom: 2.5rem;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #111827;
-}
+  > li {
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #111827;
+    padding-left: 0.5rem;
+  }
 
-/* Nested List (The Practices) */
-.manifesto ul, .manifesto ol {
-  list-style: none;
-  margin-top: 0.75rem;
-  padding-left: 1.5rem;
-  border-left: 2px solid #e5e7eb; /* The vertical connector */
-  margin-left: 0.4rem;
-}
+  ul, ol {
+    list-style: none;
+    margin-top: 0.75rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid #e5e7eb;
+    margin-left: 0.4rem;
 
-/* Sub-items */
-.manifesto ul li, .manifesto ol li {
-  font-weight: 400;
-  font-size: 1rem;
-  color: #4b5563;
-  padding: 8px 0;
-  position: relative;
-}
+    li {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #4b5563;
+      padding: 8px 0;
+      position: relative;
 
-.manifesto ul li::before, .manifesto ol li::before {
-  content: "";
-  position: absolute;
-  left: -1.5rem;
-  top: 1.2rem;
-  width: 1rem;
-  height: 1px;
-  background: #e5e7eb;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -1.5rem;
+        top: 1.2rem;
+        width: 1rem;
+        height: 1px;
+        background: #e5e7eb;
+      }
+    }
+  }
 }
 
 /* Footer */

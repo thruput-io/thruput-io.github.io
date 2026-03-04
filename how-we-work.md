@@ -38,3 +38,4 @@ title: Who We Are
 - **Speak the Truth:** Even when it’s uncomfortable.
 - **Ship for the User:** Not for the Jira board.
 - **Love the Process:** Because the craft is the reward.
+  {: .manifesto}
