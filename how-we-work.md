@@ -1,6 +1,5 @@
 ---
-title: How We Work
-index: 'true'
+title: Who We Are
 ---
 ## Our Core Values
 
@@ -15,20 +14,23 @@ index: 'true'
 
 - ### Joy Through Craft
   We founded this company on a simple realization: working by these values is, quite simply, the most fun. We believe that doing things the right way—with discipline, transparency, and purpose—is the most rewarding way to spend our time. For us, "fun" isn’t a distraction from the work; it is the byproduct of mastering our craft and building something we’re proud of. We didn’t just build a company to solve a problem; we built it to enjoy the journey together.
-
+{: .rich-cards}
 ---
 
 ## Engineering Manifesto
 
-1.  ### The Test-First Mandate
-    - **No Code Without Coverage:** If it isn't tested, it's broken by design.
-    - **The "Green-to-Merge" Rule:** CI pipelines must be passing and robust. "Flaky" tests are treated as critical bugs and must be fixed immediately, not bypassed.
+1. ### The Test-First Mandate
+   - **No Code Without Coverage:** If it isn't tested, it's broken by design.
+   - **The "Green-to-Merge" Rule:** CI pipelines must be passing and robust. "Flaky" tests are treated as critical bugs and must be fixed immediately, not bypassed.
+
 2. ### Radical Reproducibility
-    - **Environment Parity:** If it works on your machine but not in production, the environment is the bug. We use infrastructure-as-code (IaC) to ensure Local=Staging=Production.
-    - **Automation over Manual:** If a task must be done twice, it must be automated.
-    - **One-Command Setup:** A new engineer should be able to clone, build, and test the entire stack with a single command.
-3.  ### Own the Runtime
-    - **Telemetry over Guesswork:** We don't "hope" a feature works. We deploy with telemetry, logs, and alerts already in place. If we can't see it, we don't ship it. We aim to identify and resolve regressions before the customer even notices a flicker.
+   - **Environment Parity:** If it works on your machine but not in production, the environment is the bug. We use infrastructure-as-code (IaC) to ensure Local=Staging=Production.
+   - **Automation over Manual:** If a task must be done twice, it must be automated.
+   - **One-Command Setup:** A new engineer should be able to clone, build, and test the entire stack with a single command.
+
+3. ### Own the Runtime
+   - **Telemetry over Guesswork:** We don't "hope" a feature works. We deploy with telemetry, logs, and alerts already in place. If we can't see it, we don't ship it. We aim to identify and resolve regressions before the customer even notices a flicker.
+{: .manifesto}
 
 ## Our Daily Commitment
 - **Automate the Boring:** So we can focus on the Creative.
